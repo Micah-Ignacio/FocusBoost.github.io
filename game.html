@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS & JS ======== -->    
+    <link rel="stylesheet" href="styleG.css">
+    <script src="javascript-word-scramble-game/js/script.js" defer></script>
+    <script src="javascript-word-scramble-game/js/words.js" defer></script>
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Word Scramble</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+  </head>
+
+  <body>
+
+    <!----===== Sidebar ===== -->
+
+    <nav class="sidebar close">
+
+        <header>
+  
+          <div class="image-text">
+            <span class="image">
+              <img src="images/logo.png" alt="">
+            </span>
+  
+            <div class="text logo-text">
+              <span class="name">FocusBoost</span>
+            </div>
+          </div>
+  
+          <i class='bx bx-chevron-right toggle'></i>
+  
+        </header>
+  
+        <div class="menu-bar">
+  
+          <div class="menu">
+            <ul class="menu-links">
+  
+              <li class="nav-link">
+                <a href="index.html">
+                  <i class='bx bx-home-alt icon' ></i>
+                  <span class="text nav-text">Home</span>
+                  </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="todolist.html">
+                  <i class='bx bx-check-square icon' ></i>
+                  <span class="text nav-text">Today List</span>
+                </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="schedule.html">
+                  <i class='bx bx-calendar-event icon'></i>
+                  <span class="text nav-text">Schedule</span>
+                </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="alarmclock.html">
+                  <i class='bx bx-alarm icon'></i>
+                  <span class="text nav-text">Alarm</span>
+                </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="pomodoro.html">
+                  <i class='bx bx-timer icon' ></i>
+                  <span class="text nav-text">Pomodoro</span>
+                </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="quotes.html">
+                  <i class='bx bxs-quote-alt-left icon' ></i>
+                  <span class="text nav-text">Quotes</span>
+                </a>
+              </li>
+  
+              <li class="nav-link">
+                <a href="game.html">
+                  <i class='bx bx-trophy icon' ></i>
+                  <span class="text nav-text">Word Scramble</span>
+                </a>
+              </li>
+  
+            </ul>
+          </div>
+  
+          <div class="bottom-content">
+                  
+            <li class="mode">
+              <div class="sun-moon">
+                <i class='bx bx-moon icon moon'></i>
+                <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">Dark mode</span>
+  
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+            </li>
+                    
+          </div>
+  
+        </div>
+  
+      </nav>
+    <!----===== Sidebar End ===== -->
+
+    <!----===== Word Scramble ===== -->
+
+    <div class="container">
+
+        <h2>Word Scramble</h2>
+        <center><div class="startArea" onclick="start()"><button class="startBtn">Game Start!</button></div></center>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+            <div class="score-area"><span>Score: </span><span class="score">0</span></div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p id="modalText"></p>
+    </div></div>
+
+    <!----===== Word Scramble End ===== -->
+    
+  </body>
+</html>

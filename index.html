@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="styleHome.css">
+      
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+      
+    <title>FocusBoost</title> 
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+  </head>
+
+  <body>
+
+    <!----===== Sidebar ===== -->
+    <nav class="sidebar close">
+
+      <header>
+
+        <div class="image-text">
+          <span class="image">
+            <img src="images/logo.png" alt="">
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">FocusBoost</span>
+          </div>
+        </div>
+
+        <i class='bx bx-chevron-right toggle'></i>
+
+      </header>
+
+      <div class="menu-bar">
+
+        <div class="menu">
+          <ul class="menu-links">
+
+            <li class="nav-link">
+              <a href="index.html">
+                <i class='bx bx-home-alt icon' ></i>
+                <span class="text nav-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="todolist.html">
+                <i class='bx bx-check-square icon' ></i>
+                <span class="text nav-text">Today List</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="schedule.html">
+                <i class='bx bx-calendar-event icon'></i>
+                <span class="text nav-text">Schedule</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="alarmclock.html">
+                <i class='bx bx-alarm icon'></i>
+                <span class="text nav-text">Alarm</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="pomodoro.html">
+                <i class='bx bx-timer icon' ></i>
+                <span class="text nav-text">Pomodoro</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="quotes.html">
+                <i class='bx bxs-quote-alt-left icon' ></i>
+                <span class="text nav-text">Quotes</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="game.html">
+                <i class='bx bx-trophy icon' ></i>
+                <span class="text nav-text">Word Scramble</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+                
+          <li class="mode">
+            <div class="sun-moon">
+              <i class='bx bx-moon icon moon'></i>
+              <i class='bx bx-sun icon sun'></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+                  
+        </div>
+
+      </div>
+
+    </nav>
+    <!----===== Sidebar End ===== -->
+
+    <!----===== Home Content ===== -->
+    <section class="home" id="home">
+
+      <div class="content">
+        <h3>Wake Up Determined <br> Go To Bed Satisfied <br> <p>Fuel Your Focus, Propel Your Productivity!</p>
+          <button id="about-btn" class="btn">About</button>
+        </h3>
+      </div>
+      <div class="floating-box" id="about-box">
+        <button id="close-btn" class="close-btn">x</button>
+        <p><b>Welcome to our website designed to cater to students' needs!</b> We are dedicated to providing an all-in-one platform to help students manage their tasks, schedules, and productivity efficiently. Our feature-rich service includes a todo list, calendar schedule, alarm, and pomodoro timer, all aimed at enhancing students' organization and productivity levels.
+        <br><br>
+        <b>Key Features:</b>
+        <br><br>
+        <b>1. To-do List:</b> Stay on top of your assignments, projects, and personal tasks with our user-friendly todo list. Create, prioritize, and check off tasks as you complete them, ensuring you never miss a deadline again.
+        <br><br>
+        <b>2. Calendar Schedule:</b> Our interactive calendar allows you to plan and visualize your academic and personal commitments effectively. Stay organized with color-coded events and reminders, helping you manage your time and commitments efficiently.
+        <br><br>
+        <b>3. Alarm:</b> Never miss an important class or appointment again! Set personalized alarms to wake up in the morning or as a reminder for essential events during the day.
+        <br><br>
+        <b>4. Pomodoro Timer:</b> Boost your productivity and focus using the Pomodoro Technique. Our integrated Pomodoro timer allows you to work in focused intervals with short breaks, optimizing your study sessions for maximum efficiency.
+      </div>
+      
+    </section>
+
+    <section class="datetime" id="datetime">
+
+      <div class="time"></div>
+      <div class="date"></div>
+
+    </section>
+    <!----===== Home Content End ===== -->
+
+    <script src="scriptHome.js"></script>
+
+  </body>
+</html>

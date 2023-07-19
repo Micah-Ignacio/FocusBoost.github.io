@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="styleA.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Alarm</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+  </head>
+
+  <body>
+
+    <!----===== Sidebar ===== -->
+    <nav class="sidebar close">
+
+      <header>
+
+        <div class="image-text">
+          <span class="image">
+            <img src="images/logo.png" alt="">
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">FocusBoost</span>
+          </div>
+        </div>
+
+        <i class='bx bx-chevron-right toggle'></i>
+
+      </header>
+
+      <div class="menu-bar">
+
+        <div class="menu">
+          <ul class="menu-links">
+
+            <li class="nav-link">
+              <a href="index.html">
+                <i class='bx bx-home-alt icon' ></i>
+                <span class="text nav-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="todolist.html">
+                <i class='bx bx-check-square icon' ></i>
+                <span class="text nav-text">Today List</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="schedule.html">
+                <i class='bx bx-calendar-event icon'></i>
+                <span class="text nav-text">Schedule</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="alarmclock.html">
+                <i class='bx bx-alarm icon'></i>
+                <span class="text nav-text">Alarm</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="pomodoro.html">
+                <i class='bx bx-timer icon' ></i>
+                <span class="text nav-text">Pomodoro</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="quotes.html">
+                <i class='bx bxs-quote-alt-left icon' ></i>
+                <span class="text nav-text">Quotes</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="game.html">
+                <i class='bx bx-trophy icon' ></i>
+                <span class="text nav-text">Word Scramble</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+                
+          <li class="mode">
+            <div class="sun-moon">
+              <i class='bx bx-moon icon moon'></i>
+              <i class='bx bx-sun icon sun'></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+                  
+        </div>
+
+      </div>
+
+    </nav>
+    <!----===== Sidebar End ===== -->
+
+    <!----===== Alarm ===== -->
+    <div class="wrapper">
+
+      <h1>00:00:00 PM</h1>
+
+      <div class="content">
+
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button>Set Alarm</button>
+
+    </div>
+    <!----===== Alarm End ===== -->
+
+    <script src="scriptA.js"></script>
+
+  </body>
+</html>
